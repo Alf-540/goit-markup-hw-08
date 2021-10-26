@@ -1,0 +1,11 @@
+.header__logo,
+.footer__logo {
+  font-family: raleway;
+  @include font(normal, 700, 26px, 31px, 0.03em);
+  color: var(--logo-color);
+  text-decoration: none;
+}
+
+.logo__accent {
+  color: var(--accent-color);
+}

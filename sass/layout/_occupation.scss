@@ -1,0 +1,49 @@
+.occupation {
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.occupation__title {
+  @include font(normal, bold, 36px, 42px, 00.03em);
+
+  color: var(--primary-title-color);
+
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.occupation__item {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  & > .thumb {
+    position: relative;
+    width: 100%;
+    height: 294px;
+    padding: 0;
+  }
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.occupation__description {
+  @include flex();
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  @include font(normal, bold, 14px, 16px, 00.03em);
+
+  text-transform: uppercase;
+
+  color: var(--hero-text-color);
+  background-color: var(--occupation-background);
+}
+
+.occupation__list {
+  display: flex;
+}
