@@ -2,6 +2,10 @@
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .occupation__title {
@@ -45,5 +49,5 @@
 }
 
 .occupation__list {
-  display: flex;
+  @include flex();
 }

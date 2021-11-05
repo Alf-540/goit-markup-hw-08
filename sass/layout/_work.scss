@@ -1,19 +1,49 @@
 .work {
-  display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    @include flex();
+    align-items: stretch;
+    margin-top: -30px;
+    margin-left: -30px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .work__img {
-  display: block;
+  margin: 0px;
+  width: 100%;
 }
 
 .work__list-item {
-  flex-basis: calc((100% / 3) - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
   transition: transform 300ms linear;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    box-sizing: content-box;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    transition: transform 300ms linear;
+  }
 
   &:hover,
   &:focus {
@@ -21,13 +51,6 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:nth-child(n + 3) {
-    margin-right: 0;
-  }
-
-  &:nth-last-child(-n + 3) {
-    margin-right: 0;
-  }
   & .thumb {
     position: relative;
     overflow: hidden;
@@ -38,15 +61,26 @@
   }
 }
 
+.work__link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .work__name-description {
   border: 1px solid var(--border-cards-color);
   border-top: none;
   padding: 20px 24px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .work__card-header {
   @include font(normal, bold, 18px, 36px, 0.06em);
   color: var(--primary-title-color);
+  margin-bottom: 4px;
 }
 
 .work__card-text {
@@ -56,7 +90,14 @@
 
 .work__card-description {
   @include flex();
-  padding: 64px 24px;
+  padding: 77px 24px;
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 
   position: absolute;
   top: 0;
