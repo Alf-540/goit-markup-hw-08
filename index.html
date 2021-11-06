@@ -53,42 +53,45 @@
                 <svg class="header__burger-svg">
                     <use class="mobile-menu-btn__open" href="./images/icons.svg#burger"></use>
                 </svg></button>
-
         </div>
     </header>
     <main>
         <!-- мобильное меню -->
         <div class="menu-container js-menu-container" id="menu-container " mobileMenu>
             <button type="button" class="close js-close-menu  btn" openMenuBtn aria-expanded="false"
-                aria-controls="menu-container"><svg class="header__burger-svg">
-                    <use href="./images/icons.svg#icon-close" class="mobile-menu-btn__close"></use>
+                aria-controls="menu-container"><svg class=" mobile-menu__close-btn">
+                    <use href="./images/icons.svg#icon-close" class="mobile-menu-btn__close">
+                    </use>
                 </svg></button>
             <nav>
                 <ul class="mobile-menu">
-                    <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link link">Студия</a></li>
+                    <li class="mobile-menu__item"><a href="./index.html"
+                            class="mobile-menu__link mobile-menu__link_current link ">Студия</a>
+                    </li>
                     <li class="mobile-menu__item"><a href="./portfolio.html"
                             class="mobile-menu__link link">Портфолио</a>
                     </li>
                     <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="mobile-menu__contacts list">
-                <li class="mobile-menu__contacts_item ">
-                    <a href="tel:+380961111111" class="mobile-menu__link link">
-                        +38 096 1111111</a>
-                </li>
-                <li class="mobile-menu__contacts_item ">
-                    <a href="mailto:info@devstudio.com" class="mobile-menu__link link">
-                        info@devstudio.com
-                    </a>
-                </li>
-
-            </ul>
-            <div class="wrap">
-                <a href="" class="mobile-menu__soc-link link">Instagram</a>
-                <a href="" class="mobile-menu__soc-link link">Twitter</a>
-                <a href="" class="mobile-menu__soc-link link">Facebook</a>
-                <a href="" class="mobile-menu__soc-link link">LinkedIn</a>
+            <div class="mobile-menu__content">
+                <ul class="mobile-menu__contacts list">
+                    <li class="mobile-menu__contacts_item ">
+                        <a href="tel:+380961111111" class="mobile-menu__link phone_m link">
+                            +38 096 1111111</a>
+                    </li>
+                    <li class="mobile-menu__contacts_item ">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu__link mail_m link">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+                <div class="wrap">
+                    <a href="" class="mobile-menu__soc-link link">Instagram</a>
+                    <a href="" class="mobile-menu__soc-link link">Twitter</a>
+                    <a href="" class="mobile-menu__soc-link link">Facebook</a>
+                    <a href="" class="mobile-menu__soc-link link">LinkedIn</a>
+                </div>
             </div>
         </div>
         <!--герой-->
@@ -373,7 +376,6 @@
                     <form class="footer__subscribe-form">
                         <input type="email" name="email" placeholder="E-mail" class="input-window" />
                     </form>
-
                     <button type="submit" class="submit-button btn">
                         Подписаться
                         <svg class="footer__submit-icon">
