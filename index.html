@@ -172,19 +172,28 @@
                 <ul class="occupation__list list">
                     <li class="occupation__item">
                         <div class="thumb">
-                            <img src="./images/box1.jpg" width="370" height="294" alt="разработка">
+                            <picture>
+                                <source srcset="./images/desktop/box1.jpg 1x,
+ ./images/desktop/box1@2x.jpg 2x"> <img src="./images/desktop/box1.jpg" alt="разработка">
+                            </picture>
                             <p class="occupation__description">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="occupation__item">
                         <div class="thumb">
-                            <img src="./images/box2.jpg" width="370" height="294" alt="дизайн">
+                            <picture>
+                                <source srcset="./images/desktop/box2.jpg 1x,
+                             ./images/desktop/box2@2x.jpg 2x"> <img src="./images/desktop/box2.jpg" alt="дизайн">
+                            </picture>
                             <p class="occupation__description">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="occupation__item">
                         <div class="thumb">
-                            <img src="./images/box3.jpg" width="370" height="294" alt="графика">
+                            <picture>
+                                <source srcset="./images/desktop/box3.jpg 1x,
+                             ./images/desktop/box3@2x.jpg 2x"> <img src="./images/desktop/box3.jpg" alt="графика">
+                            </picture>
                             <p class="occupation__description">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -198,7 +207,16 @@
             <div class="container">
                 <ul class="team__list list">
                     <li class="team__card">
-                        <img src="./images/cmd1.jpg" alt="Игорь Демьяненко" class="team__photo">
+                        <picture>
+                            <source srcset="./images/desktop/cmd1.jpg 1x,
+                            ./images/desktop/cmd1@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tab/cmd1.jpg 1x,
+./images/tab/cmd1@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mob/cmd1.jpg 1x,
+                            ./images/mob/cmd1@2x.jpg 2x,
+                            ./images/mob/cmd1@3x.jpg 3x" @media="(max-width: 767px)">
+                            <img src="./images/mob/cmd1.jpg" alt="Игорь Демьяненко" class="team__photo">
+                        </picture>
                         <h3 class="team__card-header">Игорь Демьяненко</h3>
                         <p class="team__card-occupation">Product Designer</p>
                         <div class="wrap">
@@ -218,7 +236,16 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img src="./images/cmd2.jpg" alt="Ольга Репина" class="team__photo">
+                        <picture>
+                            <source srcset="./images/desktop/cmd2.jpg 1x,
+                                                        ./images/desktop/cmd2@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/tab/cmd2.jpg 1x,
+                            ./images/tab/cmd2@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mob/cmd2.jpg 1x,
+                                                        ./images/mob/cmd2@2x.jpg 2x,
+                                                        ./images/mob/cmd2@3x.jpg 3x" @media="(max-width: 767px)">
+                            <img src="./images/mob/cmd2.jpg" alt="Ольга Репина" class="team__photo">
+                        </picture>
                         <h3 class="team__card-header">Ольга Репина</h3>
                         <p class="team__card-occupation">Frontend Developer</p>
                         <div class="wrap">
@@ -238,7 +265,18 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img src="./images/cmd3.jpg" alt="Николай Тарасов" class="team__photo">
+                        <picture>
+                            <source srcset="./images/desktop/cmd3.jpg 1x,
+                                                                                    ./images/desktop/cmd3@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tab/cmd3.jpg 1x,
+                                                        ./images/tab/cmd3@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mob/cmd3.jpg 1x,
+                                                                                    ./images/mob/cmd3@2x.jpg 2x,
+                                                                                    ./images/mob/cmd3@3x.jpg 3x"
+                                @media="(max-width: 767px)">
+                            <img src="./images/mob/cmd3.jpg" alt="Николай Тарасов" class="team__photo">
+                        </picture>
                         <h3 class="team__card-header">Николай Тарасов</h3>
                         <p class="team__card-occupation">Marketing</p>
                         <div class="wrap">
@@ -258,7 +296,18 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img src="./images/cmd4.jpg" alt="Михаил Ермаков" class="team__photo">
+                        <picture>
+                            <source srcset="./images/desktop/cmd4.jpg 1x,
+                                                                                    ./images/desktop/cmd4@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tab/cmd4.jpg 1x,
+                                                        ./images/tab/cmd4@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mob/cmd4.jpg 1x,
+                                                                                    ./images/mob/cmd4@2x.jpg 2x,
+                                                                                    ./images/mob/cmd4@3x.jpg 3x"
+                                @media="(max-width: 767px)">
+                            <img src="./images/mob/cmd4.jpg" alt="Михаил Ермаков" class="team__photo">
+                        </picture>
                         <h3 class="team__card-header">Михаил Ермаков</h3>
                         <p class="team__card-occupation">UI Designer</p>
                         <div class="wrap">

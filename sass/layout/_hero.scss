@@ -3,45 +3,63 @@
   padding-top: 118px;
   padding-bottom: 118px;
   justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 
   background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-    url(../images/mob/hero.jpg);
+    url(../images/mob/hero-bgd-m.jpg);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-      url(../images/mob/hero@2x.jpg);
+      url(../images/mob/hero-bgd-m@2x.jpg);
   }
 
   @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-      url(../images/mob/hero@3x.jpg);
+      url(../images/mob/hero-bgd-m@3x.jpg);
   }
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     background-size: 768px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-      url(../images/hero-bgd-t.jpg);
+      url(../images/tab/hero-bgd-t.jpg);
     background-size: 1200px;
-    width: 100%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--hero-overlay),
+          var(--hero-overlay)
+        ),
+        url(../images/tab/hero-bgd-t@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
-      url(../images/hero-bgd-d.jpg);
     background-size: 1600px;
-    width: 100%;
+
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)),
+      url(../images/desktop/hero-bgd-d.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          var(--hero-overlay),
+          var(--hero-overlay)
+        ),
+        url(../images/desktop/hero-bgd-d@2x.jpg);
+    }
   }
 }
 
