@@ -48,13 +48,12 @@
                         +38 096 1111111</a>
                 </li>
             </ul>
-            <div class="header__burger-menu">
-                <button type="button" class="open btn js-open-menu" aria-expanded="false" aria-controls="menu-container"
-                    openMenuBtn>
-                    <svg class="header__burger-svg">
-                        <use class="mobile-menu-btn__open" href="./images/icons.svg#burger"></use>
-                    </svg></button>
-            </div>
+            <button type="button" class="open btn js-open-menu" aria-expanded="false" aria-controls="menu-container"
+                openMenuBtn>
+                <svg class="header__burger-svg">
+                    <use class="mobile-menu-btn__open" href="./images/icons.svg#burger"></use>
+                </svg></button>
+
         </div>
     </header>
     <main>
@@ -62,7 +61,7 @@
         <div class="menu-container js-menu-container" id="menu-container " mobileMenu>
             <button type="button" class="close js-close-menu  btn" openMenuBtn aria-expanded="false"
                 aria-controls="menu-container"><svg class="header__burger-svg">
-                    <use href="./images/icons.svg#icon-close"></use>
+                    <use href="./images/icons.svg#icon-close" class="mobile-menu-btn__close"></use>
                 </svg></button>
             <nav>
                 <ul class="mobile-menu">
@@ -75,20 +74,21 @@
             </nav>
             <ul class="mobile-menu__contacts list">
                 <li class="mobile-menu__contacts_item ">
+                    <a href="tel:+380961111111" class="mobile-menu__link link">
+                        +38 096 1111111</a>
+                </li>
+                <li class="mobile-menu__contacts_item ">
                     <a href="mailto:info@devstudio.com" class="mobile-menu__link link">
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="mobile-menu__contacts_item ">
-                    <a href="tel:+380961111111" class="mobile-menu__link link">
-                        +38 096 1111111</a>
-                </li>
+
             </ul>
             <div class="wrap">
-                <a href="" class=" link">Instagram</a>
-                <a href="" class=" link">Twitter</a>
-                <a href="" class=" link">Facebook</a>
-                <a href="" class=" link">LinkedIn</a>
+                <a href="" class="mobile-menu__soc-link link">Instagram</a>
+                <a href="" class="mobile-menu__soc-link link">Twitter</a>
+                <a href="" class="mobile-menu__soc-link link">Facebook</a>
+                <a href="" class="mobile-menu__soc-link link">LinkedIn</a>
             </div>
         </div>
         <!--герой-->
