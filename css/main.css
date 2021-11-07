@@ -229,8 +229,15 @@ img {
 .header {
   background-color: var(--header-background-color);
   border-bottom: 1px solid var(--border-bottom-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header > .container {
@@ -492,6 +499,11 @@ img {
 @media screen and (min-width: 768px) {
   .direction__list {
     margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .direction__list {
     margin-bottom: -30px;
   }
 }
@@ -536,6 +548,12 @@ img {
   text-transform: uppercase;
   color: var(--primary-title-color);
   margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .direction__description-title {
+    text-align: center;
+  }
 }
 
 .direction__description-text {
@@ -653,12 +671,12 @@ img {
     align-items: center;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list {
+    margin-bottom: -30px;
     align-items: flex-start;
   }
 }
@@ -750,18 +768,35 @@ img {
 }
 
 .customers {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding: 94px 0px;
+  }
 }
 
 .customers__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16667;
+  font-size: 28px;
+  line-height: 1.17857;
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .customers__list {
@@ -848,7 +883,7 @@ img {
 @media screen and (max-width: 1199px) {
   .footer__container {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
 }
@@ -1384,7 +1419,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    min-width: 528px;
     min-height: 581px;
   }
 }
@@ -1517,7 +1552,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .input-window.textarea {
-    width: 448px;
+    min-width: 448px;
   }
 }
 

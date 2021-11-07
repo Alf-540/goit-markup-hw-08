@@ -1,8 +1,13 @@
 .header {
   background-color: var(--header-background-color);
   border-bottom: 1px solid var(--border-bottom-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
   & > .container {
     display: flex;
