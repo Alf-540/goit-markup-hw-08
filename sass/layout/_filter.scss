@@ -11,9 +11,9 @@
 
 .portfolio__filter {
   @include flex();
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: start;
   }
@@ -42,7 +42,7 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 }

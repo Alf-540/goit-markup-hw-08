@@ -4,72 +4,68 @@
   @media screen and (min-width: 1200px) {
     padding: 94px 0px;
   }
-}
-
-.direction__img {
-  @include flex();
-  background-color: var(--command-background-color);
-
-  max-width: 450px;
-  height: 120px;
-  margin: 0;
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
-}
-
-.direction__list {
-  display: flex;
-  flex-wrap: wrap;
-
-  @media screen and (min-width: 768px) {
-    margin-left: -30px;
-  }
-  @media screen and (max-width: 1199px) {
-    margin-bottom: -30px;
-  }
-}
-
-.direction__description {
-  margin-left: 0px;
-}
-
-.direction__item {
-  @media screen and (max-width: 1200px) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) {
+  &__img {
     @include flex();
-    align-items: stretch;
-    flex-wrap: wrap;
-    flex-basis: calc(100% / 2 - 60px);
-    margin-left: 30px;
-  }
+    background-color: var(--command-background-color);
 
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - 120px);
-    &:not(:first-child) {
-      margin-left: 30px;
+    max-width: 450px;
+    height: 120px;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
     }
   }
-}
 
-.direction__description-title {
-  @include font(normal, bold, 14px, 16px, 0.03em);
-  text-transform: uppercase;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
 
-  color: var(--primary-title-color);
-  margin-top: 30px;
-  @media screen and (max-width: 767px) {
-    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-left: -30px;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: -30px;
+    }
   }
-}
+  &__description {
+    margin-left: 0px;
+  }
+  &__item {
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      @include flex();
+      align-items: stretch;
+      flex-wrap: wrap;
+      flex-basis: calc(100% / 2 - 60px);
+      margin-left: 30px;
+    }
 
-.direction__description-text {
-  margin-top: 10px;
-  @include font(normal, normal, 14px, 24px, 00.03em);
-  color: var(--primary-text-color);
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 120px);
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+    }
+  }
+  &__description-title {
+    @include font(normal, bold, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+
+    color: var(--primary-title-color);
+    margin-top: 30px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__description-text {
+    margin-top: 10px;
+    @include font(normal, normal, 14px, 24px, 00.03em);
+    color: var(--primary-text-color);
+  }
 }

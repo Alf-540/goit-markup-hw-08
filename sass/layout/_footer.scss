@@ -130,7 +130,8 @@
     margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
-    @include flex() margin-left: auto;
+    @include flex();
+    margin-left: auto;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
